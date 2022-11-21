@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="init()" oncontextmenu="return false;">
+    <h1 class="wood-text">Minesweeper</h1>
+    <div class="allBoard">
+      <div class="parametsDiv">
+        <div class="imgDiv">
+          <button onclick="init()" class="imgBtn">
+            <img class="smiley" src="img/smileyReg.png" />
+          </button>
+        </div>
+        <div class="timer-container">
+          <label id="minutes">00</label> :
+          <label id="seconds">00</label>
+        </div>
+        <div class="health"></div>
+      </div>
+
+      <div class="selectLevel">
+        <h3>Change Level</h3>
+        <button class="Easy" disabled onclick="changeLevel(this)">Easy</button>
+        <button class="Medium" onclick="changeLevel(this)">Medium</button>
+        <button class="Hard" onclick="changeLevel(this)">Hard</button>
+      </div>
+      <div class="board-container"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/utils.js"></script>
+  </body>
+</html>
